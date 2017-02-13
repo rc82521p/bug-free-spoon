@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Feb 13, 2017 at 11:48 PM
+-- Server version: 5.6.34
+-- PHP Version: 7.1.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `BASEBALL`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Baseball`
+--
+
+CREATE TABLE `Baseball` (
+  `Name` text NOT NULL,
+  `Team` text NOT NULL,
+  `Position` text NOT NULL,
+  `Jersey` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Baseball`
+--
+
+INSERT INTO `Baseball` (`Name`, `Team`, `Position`, `Jersey`) VALUES
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('', '', '', 0),
+('Alex Rodriguez', 'Yankees', '3B', 13),
+('David Ortiz', 'Red Sox', 'DH', 34),
+('Derek Jeter', 'Yankees', 'SS', 2),
+('Manny Machado', 'Orioles', '3B', 13),
+('Tori Hunter', 'Twins', 'OF', 48),
+('Kris Bryant', 'Cubs', '3B', 17),
+('Johan Santana', 'Mets ', 'P', 57),
+('Randy Johnson ', 'Diamondbacks', 'P', 51),
+('Roy Oswalt ', 'Astros', 'P', 44),
+('Ivan Rodriguez', 'Rangers', 'C', 7),
+('Mike Piazza', 'Mets', 'C', 31),
+('Albert Pujols', 'Cardinals', '1B', 5),
+('Robinson Cano ', 'Mariners', '2B', 22),
+('Evan Longoria', 'Rays ', '3B', 3),
+('Ichiro Suzuki', 'Mariners', 'OF', 51),
+('Barry Bonds', 'Giants', 'OF', 25);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `Baseball`
+--
+ALTER TABLE `Baseball` ADD FULLTEXT KEY `Name` (`Name`);
