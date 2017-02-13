@@ -1,0 +1,8 @@
+SELECT Name,Team
+FROM Baseball 
+
+INSERT INTO Baseball (Name, Team, Position, Jersey)
+VALUES (Mark Texiera, Yankees, 3B, 13)
+
+DELETE FROM Baseball
+WHERE Name=Alex Rodriguez; 
